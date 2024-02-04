@@ -1,0 +1,137 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    width:100%;
+    height:100vh;
+    border:2px solid rgb(5, 1, 1);
+    background-color:rgb(203, 201, 198)
+}
+.container{
+    /* border:2px solid red; */
+    width:100%;
+    min-height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top:50%;
+    left:50%;
+    
+    
+}
+.clock{
+    /* border:2px solid rgb(0, 0, 0); */
+    border-radius:50%;
+    width:500px;
+    height:500px;
+    overflow:hidden;
+    font-size: 2rem;
+    font-weight: bold;
+    position:relative;
+    background-color:aliceblue;
+    
+
+}
+/* .clock img{
+    width: 100%;
+    height:600px;
+    object-fit: cover;
+    filter: blur(1px); 
+} */
+.clock::before{
+    height:35px;
+    width:35px;
+    content:"";
+    background-color:black;
+    border:2px solid rgb(161, 80, 80);
+    border-radius:50%;
+    position:absolute;
+    z-index: 10;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%); /*used for centering */
+
+}
+.clockHand{
+    /* border:2px solid red; */
+    height:150px;
+    width:15px;
+    position:absolute;
+    bottom:50%;
+    left:50%;
+    transform-origin:bottom;
+    transform: translate(-50%);
+    border-top-left-radius:8px;
+    border-top-right-radius:8px;
+
+}
+
+#hour{
+    height:150px;
+    width:15px;
+    background-color:rgb(149, 56, 56);
+    
+}
+#minute{
+    /* border:2px solid red; */
+    height:180px;
+    width:12px;
+    background-color: rgb(187, 239, 239);
+    
+}
+#second{
+    /* border:2px solid red; */
+    width:1px;
+    height:210px;
+    background-color:rgba(250, 2, 188, 0.45);
+    
+}
+.number{
+    bottom: 1px;
+    box-sizing: border-box;
+    position: absolute;
+    width:500px;
+    height:500px;
+    /* border:2px solid rgb(0, 0, 0); */
+    justify-content: center;
+    display: flex;
+    transform: rotate(var(rotation));
+}
+.number1{
+    rotate: 30deg;
+}
+.number2{
+    rotate:60deg;
+}
+.number3{
+    rotate:90deg;
+}
+.number4{
+    rotate:120deg;
+}
+.number5{
+    rotate:150deg;
+}
+.number6{
+    rotate:180deg;
+}
+.number7{
+    rotate:210deg;
+}
+.number8{
+    rotate:240deg;
+}
+.number9{
+    rotate:270deg;
+}
+.number10{
+    rotate:300deg;
+}
+.number11{
+    rotate:330deg;
+}
+.number12{
+    rotate:360deg;
+}
